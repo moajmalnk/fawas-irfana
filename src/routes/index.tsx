@@ -4,13 +4,13 @@ import { WeddingInvite } from "@/components/wedding/WeddingInvite";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Muhammed Fawas Wafy weds Irzana Mahdiyya — 16 Aug 2026" },
+      { title: "Muhammed Fawas Wafy weds Irfana Mahdiyya — 16 Aug 2026" },
       {
         name: "description",
         content:
-          "Wedding invitation: Muhammed Fawas Wafy weds Irzana Mahdiyya on Sunday, 16 August 2026, 11:00 am to 02:00 pm at CV Auditorium, Athirumada.",
+          "Wedding invitation: Muhammed Fawas Wafy weds Irfana Mahdiyya on Sunday, 16 August 2026, 11:00 am to 02:00 pm at CV Auditorium, Athirumada.",
       },
-      { property: "og:title", content: "Muhammed Fawas Wafy weds Irzana Mahdiyya" },
+      { property: "og:title", content: "Muhammed Fawas Wafy weds Irfana Mahdiyya" },
       {
         property: "og:description",
         content:
