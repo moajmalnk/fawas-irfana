@@ -156,7 +156,7 @@ function CoupleSection() {
               <div className="absolute inset-x-6 bottom-6 top-10 rounded-[3rem] bg-secondary/70 blur-2xl" />
               <img
                 src={couple}
-                alt="Cartoon portrait of Muhammed Fawas Wafy and Irzana Mahdiyya in Kerala wedding attire"
+                alt="Cartoon portrait of Muhammed Fawas Wafy and Irfana Mahdiyya in Kerala wedding attire"
                 width={1024}
                 height={1280}
                 loading="lazy"
@@ -197,7 +197,7 @@ function CoupleSection() {
 
         <Reveal delay={0.28}>
           <h2 className="text-gold-3d font-script text-4xl leading-tight sm:text-6xl">
-            Irzana Mahdiyya
+            Irfana Mahdiyya
           </h2>
           <p className="mt-5 font-sans text-sm font-light tracking-[0.16em] text-muted-foreground">
             D/o. Abdul Majeed &amp; Umaiba, Perum Kuzhiyil (H)
