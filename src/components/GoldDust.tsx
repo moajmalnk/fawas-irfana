@@ -20,13 +20,15 @@ function Dust({ count = 500 }: { count?: number }) {
   useFrame((state, delta) => {
     const pts = ref.current;
     if (!pts) return;
-    const arr = pts.geometry.attributes.position.array as Float32Array;
+    const attr = pts.geometry.attributes["position"] as THREE.BufferAttribute | undefined;
+    if (!attr) return;
+    const arr = attr.array as Float32Array;
     for (let i = 0; i < count; i++) {
-      arr[i * 3 + 1] += speeds[i] * delta;
-      arr[i * 3] += Math.sin(state.clock.elapsedTime * 0.3 + i) * delta * 0.03;
-      if (arr[i * 3 + 1] > 5) arr[i * 3 + 1] = -5;
+      arr[i * 3 + 1] = (arr[i * 3 + 1] ?? 0) + (speeds[i] ?? 0.1) * delta;
+      arr[i * 3] = (arr[i * 3] ?? 0) + Math.sin(state.clock.elapsedTime * 0.3 + i) * delta * 0.03;
+      if ((arr[i * 3 + 1] ?? 0) > 5) arr[i * 3 + 1] = -5;
     }
-    pts.geometry.attributes.position.needsUpdate = true;
+    attr.needsUpdate = true;
   });
 
   return (
