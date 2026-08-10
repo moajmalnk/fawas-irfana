@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Environment } from "@react-three/drei";
 import * as THREE from "three";
 
 function HeartMesh() {
@@ -38,7 +37,7 @@ function HeartMesh() {
 
   return (
     <mesh ref={ref} geometry={geometry}>
-      <meshStandardMaterial color="#E3B778" metalness={1} roughness={0.18} />
+      <meshStandardMaterial color="#E3B778" metalness={0.9} roughness={0.22} emissive="#6b4b16" emissiveIntensity={0.25} />
     </mesh>
   );
 }
@@ -52,9 +51,10 @@ export function GoldHeart({ className = "" }: { className?: string }) {
     <div className={className} aria-hidden="true">
       <Canvas camera={{ position: [0, 0, 3.4], fov: 45 }} dpr={[1, 1.75]} gl={{ alpha: true }}>
         <ambientLight intensity={0.6} />
-        <directionalLight position={[3, 4, 5]} intensity={1.4} />
+        <directionalLight position={[3, 4, 5]} intensity={2.2} color="#fff3d6" />
+        <directionalLight position={[-4, -2, 3]} intensity={1.2} color="#E3B778" />
+        <pointLight position={[0, 0, 4]} intensity={6} color="#ffe9bf" />
         <HeartMesh />
-        <Environment preset="studio" />
       </Canvas>
     </div>
   );

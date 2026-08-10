@@ -19,7 +19,7 @@
  */
 
 @theme inline {
-  --font-script: "Cormorant Garamond", "Great Vibes", cursive;
+  --font-script: "Great Vibes", "Cormorant Garamond", cursive;
   --font-display: "Cormorant Garamond", serif;
   --font-sans: "Jost", ui-sans-serif, system-ui, sans-serif;
   --color-gold: var(--gold);
