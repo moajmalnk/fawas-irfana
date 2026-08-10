@@ -163,5 +163,38 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 }
+
+@utility text-gold-3d {
+  background-image: var(--gradient-gold);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 0 color-mix(in oklab, var(--gold-deep) 55%, transparent))
+    drop-shadow(0 8px 18px color-mix(in oklab, var(--gold-deep) 35%, transparent));
+}
+
+@utility glass-panel {
+  background: var(--glass);
+  backdrop-filter: blur(18px) saturate(150%);
+  border: 1px solid color-mix(in oklab, white 70%, transparent);
+  box-shadow:
+    var(--shadow-float),
+    inset 0 1px 0 color-mix(in oklab, white 85%, transparent);
+}
+
+@utility gold-rule {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in oklab, var(--gold) 90%, transparent),
+    transparent
+  );
+}
+
