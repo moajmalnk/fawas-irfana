@@ -1,8 +1,9 @@
 import { motion, useScroll, useTransform, useInView } from "motion/react";
 import { MapPinned } from "lucide-react";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 import { GoldDust } from "@/components/GoldDust";
+import { GoldFireworks } from "@/components/GoldFireworks";
 import { GoldHeart } from "@/components/GoldHeart";
 import { InviteMusic } from "@/components/InviteMusic";
 import bismillah from "@/assets/bismillah.png";
@@ -385,9 +386,12 @@ function Footer() {
 }
 
 export function WeddingInvite() {
+  const [fireworksKey, setFireworksKey] = useState(0);
+
   return (
     <main className="relative min-h-screen bg-background">
-      <InviteMusic />
+      <InviteMusic onOpen={() => setFireworksKey((k) => k + 1)} />
+      {fireworksKey > 0 ? <GoldFireworks showKey={fireworksKey} /> : null}
       <GoldDust />
       <Hero />
       <CoupleSection />
