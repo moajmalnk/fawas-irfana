@@ -4,6 +4,7 @@ import { useRef } from "react";
 
 import { GoldDust } from "@/components/GoldDust";
 import { GoldHeart } from "@/components/GoldHeart";
+import { InviteMusic } from "@/components/InviteMusic";
 import bismillah from "@/assets/bismillah.png";
 import couple from "@/assets/couple.png";
 import leavesBack from "@/assets/leaves-back.png";
@@ -145,40 +146,49 @@ function Hero() {
 function CoupleSection() {
   const ref = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
-  const y = useTransform(scrollYProgress, [0, 1], ["8%", "-8%"]);
+  const y = useTransform(scrollYProgress, [0, 1], ["6%", "-6%"]);
 
   return (
     <section ref={ref} className="relative overflow-hidden px-5 py-24 sm:py-32">
       <div className="mx-auto max-w-3xl text-center">
         <Reveal>
-          <div className="relative mx-auto w-full max-w-md">
+          <div className="relative mx-auto w-[min(100%,20rem)] sm:w-[min(100%,26rem)] md:w-[min(100%,28rem)]">
             <motion.div
               style={{ y }}
-              whileHover={{ scale: 1.03, rotateY: 6, rotateX: -3 }}
+              whileHover={{ scale: 1.02, rotateY: 4, rotateX: -2 }}
               transition={{ duration: 0.9, ease: cushion }}
-              className="relative [transform-style:preserve-3d]"
+              className="relative mx-auto aspect-square w-full [transform-style:preserve-3d]"
             >
-              <div className="absolute inset-x-6 bottom-6 top-10 rounded-[3rem] bg-secondary/70 blur-2xl" />
+              <div
+                aria-hidden
+                className="absolute inset-x-[10%] bottom-[6%] top-[18%] rounded-[40%] bg-secondary/65 blur-2xl"
+              />
               <img
                 src={couple}
                 alt="Cartoon portrait of Muhammed Fawas Wafy and Irfana Mahdiyya in Kerala wedding attire"
                 width={1024}
-                height={1280}
+                height={1024}
                 loading="lazy"
-                className="relative mx-auto w-full drop-shadow-[0_40px_50px_rgba(44,76,59,0.25)]"
+                className="relative z-10 aspect-square h-full w-full object-cover object-center drop-shadow-[0_28px_40px_rgba(44,76,59,0.28)]"
               />
+
+              {/* Pedestal locked to the portrait so it stays centered while scrolling */}
+              <div
+                aria-hidden
+                className="pointer-events-none absolute left-1/2 top-full z-20 flex w-full -translate-x-1/2 -translate-y-[32%] flex-col items-center"
+              >
+                <motion.div
+                  animate={{ opacity: [0.4, 0.9, 0.4], scaleX: [0.95, 1.06, 0.95] }}
+                  transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                  className="mb-[-0.4rem] h-[clamp(0.45rem,1.3vw,0.7rem)] w-[70%] rounded-full bg-gold/75 blur-[7px]"
+                />
+                <div className="h-[clamp(0.95rem,2.5vw,1.4rem)] w-[56%] rounded-[50%] border border-gold/45 bg-[#f7f4ec] shadow-[0_12px_28px_-12px_rgba(44,76,59,0.45)]" />
+                <div className="h-[clamp(1.4rem,3.8vw,2.35rem)] w-[40%] rounded-b-[1.75rem] bg-gradient-to-b from-[#f7f4ec] to-transparent" />
+              </div>
             </motion.div>
 
-            {/* Pedestal */}
-            <div className="relative -mt-6">
-              <motion.div
-                animate={{ opacity: [0.55, 1, 0.55], scaleX: [0.95, 1.03, 0.95] }}
-                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                className="mx-auto h-2 w-3/4 rounded-full bg-gold blur-md"
-              />
-              <div className="mx-auto mt-1 h-6 w-2/3 rounded-[50%] border border-gold/60 bg-secondary shadow-[0_20px_40px_-20px_rgba(44,76,59,0.5)]" />
-              <div className="mx-auto h-10 w-1/2 rounded-b-[2rem] bg-gradient-to-b from-secondary to-background" />
-            </div>
+            {/* Reserve space for the overhanging pedestal */}
+            <div className="h-[clamp(2.15rem,7vw,3.5rem)]" aria-hidden />
           </div>
         </Reveal>
 
@@ -377,6 +387,7 @@ function Footer() {
 export function WeddingInvite() {
   return (
     <main className="relative min-h-screen bg-background">
+      <InviteMusic />
       <GoldDust />
       <Hero />
       <CoupleSection />
