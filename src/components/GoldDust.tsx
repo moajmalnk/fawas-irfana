@@ -55,8 +55,16 @@ export function GoldDust() {
   if (!mounted) return null;
 
   return (
-    <div className="pointer-events-none fixed inset-0 z-30" aria-hidden="true">
-      <Canvas camera={{ position: [0, 0, 8], fov: 50 }} dpr={[1, 1.75]} gl={{ alpha: true }}>
+    <div
+      className="pointer-events-none fixed inset-0 z-30 [&_*]:pointer-events-none"
+      aria-hidden="true"
+    >
+      <Canvas
+        camera={{ position: [0, 0, 8], fov: 50 }}
+        dpr={[1, 1.75]}
+        gl={{ alpha: true }}
+        style={{ pointerEvents: "none" }}
+      >
         <Dust />
       </Canvas>
     </div>

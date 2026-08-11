@@ -8,13 +8,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Wedding invitation: Muhammed Fawas Wafy weds Irfana Mahdiyya on Sunday, 16 August 2026, 11:00 am to 02:00 pm at CV Auditorium, Athirumada.",
+          "Wedding invitation: Muhammed Fawas Wafy weds Irfana Mahdiyya on Sunday, 16 August 2026, 11:00 am to 02:00 pm at C.V. Auditorium, Athirumada.",
       },
       { property: "og:title", content: "Muhammed Fawas Wafy weds Irfana Mahdiyya" },
       {
         property: "og:description",
         content:
-          "Cordially inviting your esteemed presence — 16 August 2026, CV Auditorium, Athirumada.",
+          "Cordially inviting your esteemed presence — 16 August 2026, C.V. Auditorium, Athirumada.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

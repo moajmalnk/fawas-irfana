@@ -1,4 +1,5 @@
 import { motion, useScroll, useTransform, useInView } from "motion/react";
+import { MapPinned } from "lucide-react";
 import { useRef } from "react";
 
 import { GoldDust } from "@/components/GoldDust";
@@ -12,6 +13,10 @@ import iconVenue from "@/assets/icon-venue.png";
 import iconClock from "@/assets/icon-clock.png";
 
 const cushion = [0.22, 1, 0.36, 1] as const;
+
+/** Public Google Maps directions for C.V. Auditorium, Athirumada. */
+const VENUE_DIRECTIONS_URL =
+  "https://www.google.com/maps/dir/?api=1&destination=C.V.+Auditorium,+Athirumada,+Puthanathani,+Kerala&destination_place_id=ChIJSTaOmw20pzsRgFpttHiw-IE";
 
 const rise = {
   hidden: { opacity: 0, y: 34, filter: "blur(6px)" },
@@ -268,7 +273,7 @@ function EventDetails() {
         <DetailCard delay={0.12}>
           <motion.img
             src={iconVenue}
-            alt="3D miniature model of CV Auditorium"
+            alt="3D miniature model of C.V. Auditorium"
             width={700}
             height={700}
             loading="lazy"
@@ -277,10 +282,21 @@ function EventDetails() {
             whileHover={{ scale: 1.08 }}
             className="h-28 w-28 object-contain"
           />
-          <span className="mt-6 font-display text-3xl font-light text-primary">CV Auditorium</span>
+          <span className="mt-6 font-display text-3xl font-light text-primary">
+            C.V. Auditorium
+          </span>
           <p className="mt-2 font-sans text-sm tracking-[0.18em] text-muted-foreground">
-            Athirumada
+            Athirumada, Puthanathani
           </p>
+          <a
+            href={VENUE_DIRECTIONS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-5 inline-flex items-center gap-2 rounded-full border border-gold/50 bg-secondary/40 px-4 py-2 font-sans text-[0.7rem] uppercase tracking-[0.22em] text-gold-deep transition-colors hover:border-gold hover:bg-secondary/70 hover:text-primary"
+          >
+            <MapPinned className="h-3.5 w-3.5" aria-hidden />
+            Get directions
+          </a>
         </DetailCard>
 
         <DetailCard delay={0.24}>
