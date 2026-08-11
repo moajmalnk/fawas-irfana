@@ -134,36 +134,36 @@ export function InviteMusic({ onOpen }: { onOpen?: () => void }) {
               alt=""
               aria-hidden
               initial={{ opacity: 0, x: -24 }}
-              animate={{ opacity: opening ? 0 : 0.7, x: 0 }}
+              animate={{ opacity: opening ? 0 : 0.55, x: 0 }}
               transition={{ duration: 1.4, ease: cushion }}
-              className="pointer-events-none absolute -left-20 -top-16 w-[58vw] max-w-[460px] blur-[1px]"
+              className="pointer-events-none absolute -left-24 -top-20 w-[50vw] max-w-[400px] blur-[1px] max-sm:w-[62vw]"
             />
             <motion.img
               src={leavesBack}
               alt=""
               aria-hidden
               initial={{ opacity: 0, x: 24 }}
-              animate={{ opacity: opening ? 0 : 0.55, x: 0 }}
+              animate={{ opacity: opening ? 0 : 0.42, x: 0 }}
               transition={{ duration: 1.4, ease: cushion, delay: 0.08 }}
-              className="pointer-events-none absolute -right-24 top-[18%] w-[52vw] max-w-[420px] rotate-180 blur-[2px]"
+              className="pointer-events-none absolute -right-28 top-[16%] w-[46vw] max-w-[360px] rotate-180 blur-[2px] max-sm:w-[58vw]"
             />
             <motion.img
               src={leavesFront}
               alt=""
               aria-hidden
               initial={{ opacity: 0, y: 28 }}
-              animate={{ opacity: opening ? 0 : 0.85, y: 0 }}
+              animate={{ opacity: opening ? 0 : 0.55, y: 0 }}
               transition={{ duration: 1.5, ease: cushion, delay: 0.12 }}
-              className="pointer-events-none absolute -bottom-16 -left-14 w-[62vw] max-w-[480px] -scale-x-100"
+              className="pointer-events-none absolute -bottom-24 -left-20 w-[48vw] max-w-[380px] -scale-x-100 opacity-80 max-sm:w-[70vw]"
             />
             <motion.img
               src={leavesFront}
               alt=""
               aria-hidden
               initial={{ opacity: 0, y: 28 }}
-              animate={{ opacity: opening ? 0 : 0.85, y: 0 }}
+              animate={{ opacity: opening ? 0 : 0.55, y: 0 }}
               transition={{ duration: 1.5, ease: cushion, delay: 0.16 }}
-              className="pointer-events-none absolute -bottom-20 -right-16 w-[58vw] max-w-[460px]"
+              className="pointer-events-none absolute -bottom-28 -right-20 w-[46vw] max-w-[360px] max-sm:w-[66vw]"
             />
 
             <div className="relative z-10 w-full max-w-md text-center">

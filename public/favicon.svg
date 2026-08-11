@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Fawas and Irfana">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F5D48A"/>
+      <stop offset="45%" stop-color="#E3B778"/>
+      <stop offset="100%" stop-color="#B88632"/>
+    </linearGradient>
+  </defs>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="14" fill="#FBFBF9"/>
+  <rect x="6" y="6" width="52" height="52" rx="11" fill="#F7F4EC"/>
+  <circle cx="32" cy="32" r="22.5" fill="none" stroke="url(#gold)" stroke-width="2.2"/>
+  <circle cx="32" cy="32" r="20.2" fill="none" stroke="#F5D48A" stroke-width="0.7" opacity="0.7"/>
+  <g fill="#B88632">
+    <circle cx="16.2" cy="16.2" r="1.35"/>
+    <circle cx="47.8" cy="16.2" r="1.35"/>
+    <circle cx="16.2" cy="47.8" r="1.35"/>
+    <circle cx="47.8" cy="47.8" r="1.35"/>
+  </g>
+  <text x="15.2" y="40.5" font-family="Georgia, 'Times New Roman', serif" font-size="24" fill="#2C4C3B">F</text>
+  <path fill="url(#gold)" d="M32 27.2c-.7-1.7-2.6-2.9-4.5-2.7-2.3.2-4 2.1-4 4.4 0 4.2 4.1 7.1 8.5 10.3 4.4-3.2 8.5-6.1 8.5-10.3 0-2.3-1.7-4.2-4-4.4-1.9-.2-3.8 1-4.5 2.7z"/>
+  <text x="39.4" y="40.5" font-family="Georgia, 'Times New Roman', serif" font-size="24" fill="#2C4C3B">I</text>
+</svg>

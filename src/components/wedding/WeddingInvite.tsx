@@ -150,46 +150,48 @@ function CoupleSection() {
   const y = useTransform(scrollYProgress, [0, 1], ["6%", "-6%"]);
 
   return (
-    <section ref={ref} className="relative overflow-hidden px-5 py-24 sm:py-32">
+    <section ref={ref} className="relative overflow-x-clip px-5 py-24 sm:py-32">
       <div className="mx-auto max-w-3xl text-center">
         <Reveal>
-          <div className="relative mx-auto w-[min(100%,20rem)] sm:w-[min(100%,26rem)] md:w-[min(100%,28rem)]">
+          <div className="relative mx-auto w-[min(100%,22rem)] sm:w-[min(100%,28rem)] md:w-[min(100%,30rem)]">
             <motion.div
               style={{ y }}
-              whileHover={{ scale: 1.02, rotateY: 4, rotateX: -2 }}
+              whileHover={{ scale: 1.025, rotateY: 3, rotateX: -2 }}
               transition={{ duration: 0.9, ease: cushion }}
-              className="relative mx-auto aspect-square w-full [transform-style:preserve-3d]"
+              className="relative mx-auto w-full overflow-visible [transform-style:preserve-3d]"
             >
+              {/* Soft ambient glow behind the cameo */}
               <div
                 aria-hidden
-                className="absolute inset-x-[10%] bottom-[6%] top-[18%] rounded-[40%] bg-secondary/65 blur-2xl"
-              />
-              <img
-                src={couple}
-                alt="Cartoon portrait of Muhammed Fawas Wafy and Irfana Mahdiyya in Kerala wedding attire"
-                width={1024}
-                height={1024}
-                loading="lazy"
-                className="relative z-10 aspect-square h-full w-full object-cover object-center drop-shadow-[0_28px_40px_rgba(44,76,59,0.28)]"
+                className="absolute left-1/2 top-[18%] h-[70%] w-[78%] -translate-x-1/2 rounded-[50%] bg-secondary/50 blur-3xl"
               />
 
-              {/* Pedestal locked to the portrait so it stays centered while scrolling */}
+              {/* Portrait — soft oval cameo, not a hard square crop */}
+              <div className="couple-portrait relative z-10 mx-auto aspect-[4/5] w-[88%] sm:w-[84%]">
+                <img
+                  src={couple}
+                  alt="Cartoon portrait of Muhammed Fawas Wafy and Irfana Mahdiyya in Kerala wedding attire"
+                  width={1024}
+                  height={1024}
+                  loading="lazy"
+                  className="absolute inset-0 h-full w-full object-cover object-[center_18%] select-none"
+                />
+              </div>
+
+              {/* Pedestal — rests under the soft oval base */}
               <div
                 aria-hidden
-                className="pointer-events-none absolute left-1/2 top-full z-20 flex w-full -translate-x-1/2 -translate-y-[32%] flex-col items-center"
+                className="pointer-events-none relative z-20 mx-auto -mt-5 flex w-[72%] flex-col items-center sm:-mt-7"
               >
                 <motion.div
-                  animate={{ opacity: [0.4, 0.9, 0.4], scaleX: [0.95, 1.06, 0.95] }}
+                  animate={{ opacity: [0.45, 0.95, 0.45], scaleX: [0.94, 1.05, 0.94] }}
                   transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                  className="mb-[-0.4rem] h-[clamp(0.45rem,1.3vw,0.7rem)] w-[70%] rounded-full bg-gold/75 blur-[7px]"
+                  className="mb-[-0.35rem] h-[clamp(0.45rem,1.3vw,0.7rem)] w-[90%] rounded-full bg-gold/70 blur-[8px]"
                 />
-                <div className="h-[clamp(0.95rem,2.5vw,1.4rem)] w-[56%] rounded-[50%] border border-gold/45 bg-[#f7f4ec] shadow-[0_12px_28px_-12px_rgba(44,76,59,0.45)]" />
-                <div className="h-[clamp(1.4rem,3.8vw,2.35rem)] w-[40%] rounded-b-[1.75rem] bg-gradient-to-b from-[#f7f4ec] to-transparent" />
+                <div className="h-[clamp(0.9rem,2.4vw,1.35rem)] w-[70%] rounded-[50%] border border-gold/50 bg-[#f7f4ec] shadow-[0_14px_32px_-14px_rgba(44,76,59,0.4)]" />
+                <div className="h-[clamp(1.25rem,3.4vw,2rem)] w-[48%] rounded-b-[1.75rem] bg-gradient-to-b from-[#f7f4ec] to-transparent" />
               </div>
             </motion.div>
-
-            {/* Reserve space for the overhanging pedestal */}
-            <div className="h-[clamp(2.15rem,7vw,3.5rem)]" aria-hidden />
           </div>
         </Reveal>
 

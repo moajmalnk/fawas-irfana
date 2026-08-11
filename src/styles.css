@@ -198,3 +198,24 @@
   );
 }
 
+/* Soft oval cameo — dissolves the hard square crop into the page */
+.couple-portrait {
+  overflow: hidden;
+  border-radius: 50% / 42%;
+  -webkit-mask-image: radial-gradient(
+    ellipse 92% 88% at 50% 46%,
+    #000 58%,
+    rgba(0, 0, 0, 0.55) 78%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    ellipse 92% 88% at 50% 46%,
+    #000 58%,
+    rgba(0, 0, 0, 0.55) 78%,
+    transparent 100%
+  );
+  box-shadow:
+    0 0 0 1px color-mix(in oklab, var(--gold) 35%, transparent),
+    0 28px 48px -18px color-mix(in oklab, var(--primary) 38%, transparent);
+}
+
