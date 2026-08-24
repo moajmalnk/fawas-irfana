@@ -7,7 +7,7 @@ import { GoldFireworks } from "@/components/GoldFireworks";
 import { GoldHeart } from "@/components/GoldHeart";
 import { InviteMusic } from "@/components/InviteMusic";
 import bismillah from "@/assets/bismillah.png";
-import couple from "@/assets/couple.png";
+import couple from "@/assets/couple.jpg";
 import leavesBack from "@/assets/leaves-back.png";
 import leavesFront from "@/assets/leaves-front.png";
 import iconCalendar from "@/assets/icon-calendar.png";
@@ -16,9 +16,8 @@ import iconClock from "@/assets/icon-clock.png";
 
 const cushion = [0.22, 1, 0.36, 1] as const;
 
-/** Public Google Maps directions for C.V. Auditorium, Athirumada. */
-const VENUE_DIRECTIONS_URL =
-  "https://www.google.com/maps/dir/?api=1&destination=C.V.+Auditorium,+Athirumada,+Puthanathani,+Kerala&destination_place_id=ChIJSTaOmw20pzsRgFpttHiw-IE";
+/** Public Google Maps pin for Akbar Plaza Auditorium, Kodinhi. */
+const VENUE_DIRECTIONS_URL = "https://maps.google.com/?q=11.010084,75.911140";
 
 const rise = {
   hidden: { opacity: 0, y: 34, filter: "blur(6px)" },
@@ -117,19 +116,15 @@ function Hero() {
             transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
           >
             <p className="font-sans text-[0.68rem] uppercase tracking-[0.42em] text-gold-deep">
-              Bismillahir Rahmanir Raheem
+              Save the date, celebrate with us
             </p>
             <div className="gold-rule mx-auto mt-6 h-px w-32" />
-            <h1 className="mt-6 font-display text-3xl font-light tracking-wide text-primary sm:text-4xl">
-              Mr. Ali Haji <span className="text-gold-deep">&amp;</span> Mrs. Kadheeja
+            <h1 className="mt-6 font-script text-5xl leading-tight text-primary sm:text-6xl">
+              Jumna <span className="text-gold-deep">&amp;</span> Irshad
             </h1>
-            <p className="mt-3 font-sans text-sm font-light tracking-wide text-muted-foreground">
-              Kottakkulath House, Punnathala PO, Puthanathani
-            </p>
             <div className="gold-rule mx-auto mt-7 h-px w-20" />
             <p className="mx-auto mt-7 max-w-md font-display text-lg font-light italic leading-relaxed text-primary/85 sm:text-xl">
-              Cordially invite your esteemed presence with family on the auspicious occasion of the
-              marriage of our son
+              Cordially invite your presence as we celebrate our wedding
             </p>
           </motion.div>
         </motion.div>
@@ -170,11 +165,11 @@ function CoupleSection() {
               <div className="couple-portrait relative z-10 mx-auto aspect-[4/5] w-[88%] sm:w-[84%]">
                 <img
                   src={couple}
-                  alt="Cartoon portrait of Muhammed Fawas Wafy and Irfana Mahdiyya in Kerala wedding attire"
+                  alt="Illustration of Jumna and Irshad from their wedding invitation"
                   width={1024}
-                  height={1024}
+                  height={1280}
                   loading="lazy"
-                  className="absolute inset-0 h-full w-full object-cover object-[center_18%] select-none"
+                  className="absolute inset-0 h-full w-full object-cover object-[88%_center] select-none"
                 />
               </div>
 
@@ -197,7 +192,7 @@ function CoupleSection() {
 
         <Reveal delay={0.12} className="mt-14">
           <h2 className="text-gold-3d font-script text-4xl leading-tight sm:text-6xl">
-            Muhammed Fawas Wafy
+            Jumna
           </h2>
         </Reveal>
 
@@ -215,11 +210,8 @@ function CoupleSection() {
 
         <Reveal delay={0.28}>
           <h2 className="text-gold-3d font-script text-4xl leading-tight sm:text-6xl">
-            Irfana Mahdiyya
+            Irshad
           </h2>
-          <p className="mt-5 font-sans text-sm font-light tracking-[0.16em] text-muted-foreground">
-            D/o. Abdul Majeed &amp; Umaiba, Perum Kuzhiyil (H)
-          </p>
         </Reveal>
       </div>
     </section>
@@ -274,19 +266,16 @@ function EventDetails() {
             whileHover={{ scale: 1.08, rotate: 2 }}
             className="h-28 w-28 object-contain [transform-origin:top_center]"
           />
-          <span className="mt-6 font-display text-6xl font-light text-primary">16</span>
+          <span className="mt-6 font-display text-6xl font-light text-primary">26</span>
           <p className="mt-2 font-sans text-sm tracking-[0.18em] text-muted-foreground">
-            Sunday, August 2026
-          </p>
-          <p className="mt-1 font-sans text-xs tracking-[0.14em] text-gold-deep">
-            (1448 Rabi Al Awwal 3)
+            Wednesday, August 2026
           </p>
         </DetailCard>
 
         <DetailCard delay={0.12}>
           <motion.img
             src={iconVenue}
-            alt="3D miniature model of C.V. Auditorium"
+            alt="3D miniature model of Akbar Plaza Auditorium"
             width={700}
             height={700}
             loading="lazy"
@@ -296,10 +285,10 @@ function EventDetails() {
             className="h-28 w-28 object-contain"
           />
           <span className="mt-6 font-display text-3xl font-light text-primary">
-            C.V. Auditorium
+            Akbar Plaza Auditorium
           </span>
           <p className="mt-2 font-sans text-sm tracking-[0.18em] text-muted-foreground">
-            Athirumada, Puthanathani
+            Kodinhi, Farooq Nagar
           </p>
           <a
             href={VENUE_DIRECTIONS_URL}
@@ -336,11 +325,8 @@ function EventDetails() {
             />
           </div>
           <span className="mt-6 font-display text-2xl font-light text-primary sm:text-3xl">
-            11:00 am to 02:00 pm
+            11:00 AM
           </span>
-          <p className="mt-2 font-sans text-sm tracking-[0.18em] text-muted-foreground">
-            Nikah &amp; Reception
-          </p>
         </DetailCard>
       </div>
     </section>

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Fawas and Irfana">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Jumna and Irshad">
   <defs>
     <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#F5D48A"/>
@@ -16,7 +16,7 @@
     <circle cx="16.2" cy="47.8" r="1.35"/>
     <circle cx="47.8" cy="47.8" r="1.35"/>
   </g>
-  <text x="15.2" y="40.5" font-family="Georgia, 'Times New Roman', serif" font-size="24" fill="#2C4C3B">F</text>
+  <text x="14.8" y="40.5" font-family="Georgia, 'Times New Roman', serif" font-size="24" fill="#2C4C3B">J</text>
   <path fill="url(#gold)" d="M32 27.2c-.7-1.7-2.6-2.9-4.5-2.7-2.3.2-4 2.1-4 4.4 0 4.2 4.1 7.1 8.5 10.3 4.4-3.2 8.5-6.1 8.5-10.3 0-2.3-1.7-4.2-4-4.4-1.9-.2-3.8 1-4.5 2.7z"/>
   <text x="39.4" y="40.5" font-family="Georgia, 'Times New Roman', serif" font-size="24" fill="#2C4C3B">I</text>
 </svg>

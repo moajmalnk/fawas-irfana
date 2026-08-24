@@ -73,17 +73,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Muhammed Fawas Wafy weds Irfana Mahdiyya — 16 Aug 2026" },
+      { title: "Jumna weds Irshad — 26 Aug 2026" },
       {
         name: "description",
         content:
-          "Wedding invitation: Muhammed Fawas Wafy weds Irfana Mahdiyya on Sunday, 16 August 2026 at C.V. Auditorium, Athirumada.",
+          "Wedding invitation: Jumna weds Irshad on Wednesday, 26 August 2026, 11:00 AM at Akbar Plaza Auditorium, Kodinhi, Farooq Nagar.",
       },
-      { property: "og:title", content: "Muhammed Fawas Wafy weds Irfana Mahdiyya" },
+      { property: "og:title", content: "Jumna weds Irshad" },
       {
         property: "og:description",
         content:
-          "Cordially inviting your esteemed presence — 16 August 2026, C.V. Auditorium, Athirumada.",
+          "Cordially inviting your presence — 26 August 2026, Akbar Plaza Auditorium, Kodinhi.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

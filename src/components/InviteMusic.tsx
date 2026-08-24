@@ -205,7 +205,7 @@ export function InviteMusic({ onOpen }: { onOpen?: () => void }) {
                 transition={{ duration: 1.1, ease: cushion, delay: 0.55 }}
                 className="text-gold-3d mt-6 font-script text-5xl leading-tight sm:text-6xl"
               >
-                Fawas &amp; Irfana
+                Jumna &amp; Irshad
               </motion.h2>
 
               <motion.p
@@ -223,7 +223,7 @@ export function InviteMusic({ onOpen }: { onOpen?: () => void }) {
                 transition={{ duration: 0.8, ease: cushion, delay: 0.82 }}
                 className="mt-3 font-sans text-[0.7rem] tracking-[0.22em] text-muted-foreground"
               >
-                16 August 2026
+                26 August 2026
               </motion.p>
 
               <motion.button
