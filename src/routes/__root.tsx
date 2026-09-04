@@ -73,17 +73,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Jumna weds Irshad — 26 Aug 2026" },
+      { title: "Ashmal K weds Fathima Shifa — 16 Sep 2026" },
       {
         name: "description",
         content:
-          "Wedding invitation: Jumna weds Irshad on Wednesday, 26 August 2026, 11:00 AM at Akbar Plaza Auditorium, Kodinhi, Farooq Nagar.",
+          "Wedding invitation: Ashmal K weds Fathima Shifa on Wednesday, 16 September 2026, 11:00 AM at Akbar Plaza Auditorium.",
       },
-      { property: "og:title", content: "Jumna weds Irshad" },
+      { property: "og:title", content: "Ashmal K weds Fathima Shifa" },
       {
         property: "og:description",
         content:
-          "Cordially inviting your presence — 26 August 2026, Akbar Plaza Auditorium, Kodinhi.",
+          "Cordially inviting your esteemed presence — 16 September 2026, Akbar Plaza Auditorium.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

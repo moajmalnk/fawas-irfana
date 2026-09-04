@@ -7,7 +7,7 @@ import { GoldFireworks } from "@/components/GoldFireworks";
 import { GoldHeart } from "@/components/GoldHeart";
 import { InviteMusic } from "@/components/InviteMusic";
 import bismillah from "@/assets/bismillah.png";
-import couple from "@/assets/couple.jpg";
+import couple from "@/assets/couple.png";
 import leavesBack from "@/assets/leaves-back.png";
 import leavesFront from "@/assets/leaves-front.png";
 import iconCalendar from "@/assets/icon-calendar.png";
@@ -16,8 +16,8 @@ import iconClock from "@/assets/icon-clock.png";
 
 const cushion = [0.22, 1, 0.36, 1] as const;
 
-/** Public Google Maps pin for Akbar Plaza Auditorium, Kodinhi. */
-const VENUE_DIRECTIONS_URL = "https://maps.google.com/?q=11.010084,75.911140";
+/** Public Google Maps pin for Akbar Plaza Auditorium. */
+const VENUE_DIRECTIONS_URL = "https://maps.google.com/?q=11.129738,76.268883";
 
 const rise = {
   hidden: { opacity: 0, y: 34, filter: "blur(6px)" },
@@ -116,15 +116,19 @@ function Hero() {
             transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
           >
             <p className="font-sans text-[0.68rem] uppercase tracking-[0.42em] text-gold-deep">
-              Save the date, celebrate with us
+              Bismillahir Rahmanir Raheem
             </p>
             <div className="gold-rule mx-auto mt-6 h-px w-32" />
-            <h1 className="mt-6 font-script text-5xl leading-tight text-primary sm:text-6xl">
-              Jumna <span className="text-gold-deep">&amp;</span> Irshad
+            <h1 className="mt-6 font-display text-3xl font-light tracking-wide text-primary sm:text-4xl">
+              Mr. Ahammed Kutty <span className="text-gold-deep">&amp;</span> Mrs. Ayisha
             </h1>
+            <p className="mt-3 font-sans text-sm font-light tracking-wide text-muted-foreground">
+              Karumarottu H
+            </p>
             <div className="gold-rule mx-auto mt-7 h-px w-20" />
             <p className="mx-auto mt-7 max-w-md font-display text-lg font-light italic leading-relaxed text-primary/85 sm:text-xl">
-              Cordially invite your presence as we celebrate our wedding
+              Cordially invite your esteemed presence with family on the auspicious occasion of the
+              marriage of our son
             </p>
           </motion.div>
         </motion.div>
@@ -165,11 +169,11 @@ function CoupleSection() {
               <div className="couple-portrait relative z-10 mx-auto aspect-[4/5] w-[88%] sm:w-[84%]">
                 <img
                   src={couple}
-                  alt="Illustration of Jumna and Irshad from their wedding invitation"
+                  alt="Cartoon portrait of Ashmal K and Fathima Shifa in Kerala wedding attire"
                   width={1024}
-                  height={1280}
+                  height={1024}
                   loading="lazy"
-                  className="absolute inset-0 h-full w-full object-cover object-[88%_center] select-none"
+                  className="absolute inset-0 h-full w-full object-cover object-[center_18%] select-none"
                 />
               </div>
 
@@ -192,7 +196,7 @@ function CoupleSection() {
 
         <Reveal delay={0.12} className="mt-14">
           <h2 className="text-gold-3d font-script text-4xl leading-tight sm:text-6xl">
-            Jumna
+            Ashmal K
           </h2>
         </Reveal>
 
@@ -210,8 +214,11 @@ function CoupleSection() {
 
         <Reveal delay={0.28}>
           <h2 className="text-gold-3d font-script text-4xl leading-tight sm:text-6xl">
-            Irshad
+            Fathima Shifa
           </h2>
+          <p className="mt-5 font-sans text-sm font-light tracking-[0.16em] text-muted-foreground">
+            D/o. Abdul Rasheed Faizy &amp; Sajidha, Kurathithodika Juma Maajid
+          </p>
         </Reveal>
       </div>
     </section>
@@ -266,9 +273,9 @@ function EventDetails() {
             whileHover={{ scale: 1.08, rotate: 2 }}
             className="h-28 w-28 object-contain [transform-origin:top_center]"
           />
-          <span className="mt-6 font-display text-6xl font-light text-primary">26</span>
+          <span className="mt-6 font-display text-6xl font-light text-primary">16</span>
           <p className="mt-2 font-sans text-sm tracking-[0.18em] text-muted-foreground">
-            Wednesday, August 2026
+            Wednesday, September 2026
           </p>
         </DetailCard>
 
@@ -287,9 +294,6 @@ function EventDetails() {
           <span className="mt-6 font-display text-3xl font-light text-primary">
             Akbar Plaza Auditorium
           </span>
-          <p className="mt-2 font-sans text-sm tracking-[0.18em] text-muted-foreground">
-            Kodinhi, Farooq Nagar
-          </p>
           <a
             href={VENUE_DIRECTIONS_URL}
             target="_blank"
