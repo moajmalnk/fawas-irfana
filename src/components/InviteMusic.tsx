@@ -236,8 +236,9 @@ export function InviteMusic({ onOpen }: { onOpen?: () => void }) {
                   y: 0,
                   scale: opening ? 0.96 : 1,
                 }}
-                whileHover={opening ? undefined : { scale: 1.03 }}
-                whileTap={opening ? undefined : { scale: 0.98 }}
+                {...(opening
+                  ? {}
+                  : { whileHover: { scale: 1.03 }, whileTap: { scale: 0.98 } })}
                 transition={{ duration: 0.85, ease: cushion, delay: 0.95 }}
                 className="relative mt-10 inline-flex min-h-12 w-full items-center justify-center overflow-hidden rounded-full border border-gold/60 bg-secondary/55 px-10 py-3.5 font-sans text-[0.72rem] uppercase tracking-[0.28em] text-gold-deep shadow-[0_16px_40px_-24px_rgba(180,140,70,0.55)] transition-colors hover:border-gold hover:bg-secondary hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/60 disabled:cursor-wait sm:w-auto"
               >

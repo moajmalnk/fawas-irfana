@@ -16,7 +16,7 @@ import iconClock from "@/assets/icon-clock.png";
 
 const cushion = [0.22, 1, 0.36, 1] as const;
 
-/** Public Google Maps pin for Akbar Plaza Auditorium. */
+/** Public Google Maps pin for Kurathithodika Juma Maajid. */
 const VENUE_DIRECTIONS_URL = "https://maps.google.com/?q=11.129738,76.268883";
 
 const rise = {
@@ -119,16 +119,13 @@ function Hero() {
               Bismillahir Rahmanir Raheem
             </p>
             <div className="gold-rule mx-auto mt-6 h-px w-32" />
-            <h1 className="mt-6 font-display text-3xl font-light tracking-wide text-primary sm:text-4xl">
-              Mr. Ahammed Kutty <span className="text-gold-deep">&amp;</span> Mrs. Ayisha
+            <h1 className="mt-6 font-script text-5xl leading-tight text-primary sm:text-6xl">
+              Ashmal <span className="text-gold-deep">&amp;</span> Shifa
             </h1>
-            <p className="mt-3 font-sans text-sm font-light tracking-wide text-muted-foreground">
-              Karumarottu H
-            </p>
             <div className="gold-rule mx-auto mt-7 h-px w-20" />
             <p className="mx-auto mt-7 max-w-md font-display text-lg font-light italic leading-relaxed text-primary/85 sm:text-xl">
-              Cordially invite your esteemed presence with family on the auspicious occasion of the
-              marriage of our son
+              Cordially invite your esteemed presence with family on the auspicious occasion of our
+              marriage
             </p>
           </motion.div>
         </motion.div>
@@ -198,6 +195,9 @@ function CoupleSection() {
           <h2 className="text-gold-3d font-script text-4xl leading-tight sm:text-6xl">
             Ashmal K
           </h2>
+          <p className="mt-5 font-sans text-sm font-light tracking-[0.16em] text-muted-foreground">
+            S/o. Ahammed Kutty &amp; Ayisha, Karumarottu H
+          </p>
         </Reveal>
 
         <Reveal delay={0.2}>
@@ -282,7 +282,7 @@ function EventDetails() {
         <DetailCard delay={0.12}>
           <motion.img
             src={iconVenue}
-            alt="3D miniature model of Akbar Plaza Auditorium"
+            alt="3D miniature model of Kurathithodika Juma Maajid"
             width={700}
             height={700}
             loading="lazy"
@@ -292,7 +292,7 @@ function EventDetails() {
             className="h-28 w-28 object-contain"
           />
           <span className="mt-6 font-display text-3xl font-light text-primary">
-            Akbar Plaza Auditorium
+            Kurathithodika Juma Maajid
           </span>
           <a
             href={VENUE_DIRECTIONS_URL}

@@ -77,13 +77,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Wedding invitation: Ashmal K weds Fathima Shifa on Wednesday, 16 September 2026, 11:00 AM at Akbar Plaza Auditorium.",
+          "Wedding invitation: Ashmal K weds Fathima Shifa on Wednesday, 16 September 2026, 11:00 AM at Kurathithodika Juma Maajid.",
       },
       { property: "og:title", content: "Ashmal K weds Fathima Shifa" },
       {
         property: "og:description",
         content:
-          "Cordially inviting your esteemed presence — 16 September 2026, Akbar Plaza Auditorium.",
+          "Cordially inviting your esteemed presence — 16 September 2026, Kurathithodika Juma Maajid.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
