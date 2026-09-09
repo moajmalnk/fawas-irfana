@@ -219,7 +219,7 @@ function CoupleSection() {
             Fathima Shifa
           </h2>
           <p className="mx-auto mt-5 max-w-md font-sans text-sm font-light leading-relaxed tracking-[0.12em] text-muted-foreground">
-            Abdul Rasheed Faizy &amp; Sajidha
+            D/o. Abdul Rasheed Faizy &amp; Sajidha
             <br />
             Kuttesseri (H)
           </p>
