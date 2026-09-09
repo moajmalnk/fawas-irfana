@@ -1,22 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Ashmal and Fathima Shifa">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Ashmal and Shifa">
   <defs>
     <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#F5D48A"/>
-      <stop offset="45%" stop-color="#E3B778"/>
-      <stop offset="100%" stop-color="#B88632"/>
+      <stop offset="0%" stop-color="#F8E3B0"/>
+      <stop offset="42%" stop-color="#E3B778"/>
+      <stop offset="100%" stop-color="#A67C32"/>
     </linearGradient>
   </defs>
-  <rect x="1.5" y="1.5" width="61" height="61" rx="14" fill="#FBFBF9"/>
-  <rect x="6" y="6" width="52" height="52" rx="11" fill="#F7F4EC"/>
-  <circle cx="32" cy="32" r="22.5" fill="none" stroke="url(#gold)" stroke-width="2.2"/>
-  <circle cx="32" cy="32" r="20.2" fill="none" stroke="#F5D48A" stroke-width="0.7" opacity="0.7"/>
-  <g fill="#B88632">
-    <circle cx="16.2" cy="16.2" r="1.35"/>
-    <circle cx="47.8" cy="16.2" r="1.35"/>
-    <circle cx="16.2" cy="47.8" r="1.35"/>
-    <circle cx="47.8" cy="47.8" r="1.35"/>
-  </g>
-  <text x="14.2" y="40.5" font-family="Georgia, 'Times New Roman', serif" font-size="24" fill="#2C4C3B">A</text>
-  <path fill="url(#gold)" d="M32 27.2c-.7-1.7-2.6-2.9-4.5-2.7-2.3.2-4 2.1-4 4.4 0 4.2 4.1 7.1 8.5 10.3 4.4-3.2 8.5-6.1 8.5-10.3 0-2.3-1.7-4.2-4-4.4-1.9-.2-3.8 1-4.5 2.7z"/>
-  <text x="38.8" y="40.5" font-family="Georgia, 'Times New Roman', serif" font-size="24" fill="#2C4C3B">F</text>
+  <rect x="1" y="1" width="62" height="62" rx="16" fill="#FBFBF9"/>
+  <rect x="4.5" y="4.5" width="55" height="55" rx="13" fill="#F7F4EC"/>
+  <circle cx="32" cy="32" r="24.2" fill="none" stroke="url(#gold)" stroke-width="1.6"/>
+  <circle cx="32" cy="32" r="21.6" fill="none" stroke="#C9A15B" stroke-width="0.55" opacity="0.85"/>
+  <text x="15.6" y="39.2" text-anchor="middle" font-family="Georgia, 'Times New Roman', Palatino, serif" font-size="20" font-weight="500" fill="#2C4C3B">A</text>
+  <path fill="url(#gold)" d="M32 26.4c-.55-1.35-2.05-2.3-3.55-2.15-1.85.15-3.2 1.7-3.2 3.5 0 3.35 3.25 5.65 6.75 8.2 3.5-2.55 6.75-4.85 6.75-8.2 0-1.8-1.35-3.35-3.2-3.5-1.5-.15-3 0.8-3.55 2.15z"/>
+  <text x="48.4" y="39.2" text-anchor="middle" font-family="Georgia, 'Times New Roman', Palatino, serif" font-size="20" font-weight="500" fill="#2C4C3B">S</text>
 </svg>
